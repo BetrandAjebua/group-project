@@ -366,140 +366,92 @@ nav {
     font-weight: 600;
 }
 /* contact us  */
-#section-wrapper {
-    width: 100%;
-    padding: 10px;
+.cnt {
+    width: 80%;
+    margin: 50px auto;
 }
-.box-wrapper {
-    position: relative;
-    display: table;
-    width: 1100px;
-    margin: auto;
-    margin-top: 35px;
-    border-radius: 30px;
-}
-/* info */
-.info-wrap {
-    width: 35%;
-    height: 551px;
-    padding: 40px;
-    float: left;
-    display: block;
-    border-radius: 30px 0px 0px 30px;
-    background: var(--steve-color);
-    color: whitesmoke;
-}
-.info-title {
-    text-align: left;
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-.info-sub-title {
-    font-size: 18px;
+.cnt h1 {
+    font-size: 2.5rem;
     font-weight: 300;
-    margin-top: 17px;
-    letter-spacing: 0.5px;
-    line-height: 26px;
 }
-.info-details {
-    list-style: none;
-    margin: 60px 0px;
+.contact-box {
+    background: whitesmoke;
+    display: flex;
 }
-.info-details li {
-    margin-top: 25px;
-    font-size: 18px;
-    color: whitesmoke;
-}
-.info-details li i {
-    background: var(--lo--color);
-    padding: 12px;
-    border-radius: 100%;
-    margin-right: 5px;
-    cursor: pointer;
-}
-.info-details li i:hover {
-    background-color: whitesmoke;
-    color: var(--Yo--color);
-}
-.info-details li a:hover {
-    color: var(--Yo--color);
-}
-/* social */
-.social-icons {
-    list-style: none;
-    text-align: center;
-    margin: 20px 0px;
-}
-.social-icons li {
-    display: inline-block;
-}
-.social-icons li i {
-    background: var(--lo--color);
-    color: whitesmoke;
-    padding: 15px;
-    font-size: 30px;
-    border-radius: 35%;
-    margin: 0px 5px;
-    cursor: pointer;
-    transition: all .5s;
-}
-.social-icons li i:hover {
-    background-color: whitesmoke;
-    color: var(--Yo--color);
-    font-size: 30px;
-}
-/* form */
-.form-wrap {
-    width: 65%;
-    float: right;
-    padding: 40px 25px 35px 25px;
-    border-radius: 0px 30px 30px 0px;
-    background-color: whitesmoke;
-}
-.form-title {
-    text-align: left;
-    margin-left: 23px;
-    font-size: 28px;
-    letter-spacing: 0.5px;
-}
-.form-fields {
-    display: table;
-    width: 100%;
-    padding: 15px 5px 5px 5px;
-}
-.form-fields input,
-.form-fields textarea {
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 18px;
-    color: #555;
-    padding: 20px 10px 20px 5px;
-    width: 100px;
-}
-.form-fields textarea {
-    height: 150px;
-    resize: none;
-    border: 1px solid grey;
-}
-.form-group {
-    width: 46%;
-    float: left;
-    padding: 0px 30px;
-    margin: 14px 12px;
-    /* border-radius: 25px; */
-    border: 1px solid grey;
-    /* box-shadow: inset 8px 8px 8px #ecf0f3, inset -8px -8px 8px white;  */
-}
-.submit-button {
-    width: 96px;
-    height: 60px;
-    margin: 0px 12px;
-    border-radius: 30px;
+.contact-left {
+    flex-basis: 40%;
+    padding: 40px 60px;
     background-color: var(--steve-color);
-    color: white;
-    font-size: 20px;
+    color: whitesmoke;
+}
+.contact-right {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+h1 {
+    margin-bottom: 10px;
+}
+.cnt p {
+    margin-bottom: 40px;
+}
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group {
+    flex-basis: 45%;
+}
+input {
+    width: 100%;
+}
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    padding-bottom: 5px;
+    background: none;  
+}
+textarea {
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+}
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: var(--Yo--color);
+}
+/* button */
+button {
+    background: var(--steve-color);
+    width: 100px;
+    border: none;
+    outline: none; 
+    color: whitesmoke;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-right h3 {
+    color: var(--steve-color);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-left h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child {
+    padding-right: 20px;
+}
+tr td {
+    padding-top: 20px;
 }
 
 @media (width < 900px) {
