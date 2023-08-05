@@ -233,22 +233,20 @@ nav {
 
 .service__header__content p {
     padding-top: 2rem;
-    max-width: 600px;
     color: var(--Yo--color);
 }
 
 .service__grid {
-    margin-top: 7rem;
-    margin-bottom: 5rem;
-    margin-left: 2rem;
-    margin-right: 5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-inline: 5rem;
 }
 
 .service__card {
     padding: 2rem;
+    width: 30rem;
     text-align: center;
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
@@ -294,7 +292,6 @@ nav {
 /* About */
 .about__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     align-items: center;
     margin-bottom: 14rem;
@@ -558,11 +555,6 @@ tr td {
 .footer {
     background-color: var(--Yo--color);
     margin-top: 5rem;
-}
-.footer__container {
-    display: grid;
-    grid-template-columns: 400px repeat(3, 1fr);
-    gap: 2rem;
 }
 .footer__col h3 {
     margin-bottom: 1rem;
