@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Raleway:wght@300&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Selfcare website</title>
 </head>
 
@@ -133,18 +133,14 @@
     <section class="section__container about__container">
         <div class="about__content" id="about">
             <h2 class="section__header text-3xl underline font-bold mb-9">About Us</h2>
-            <p>
+            <p class="opacity-[.7] leading-7">
                 Welcome to our SelfCare website, your one-stop destination for reliable and comprehensive health care
                 information assistant. We are committed to promoting wellness and providing valuable resources to
-                empower and assist you on your health journey.
-            </p>
-            <p>
+                empower and assist you on your health journey. <br>
                 Explore our extensive collection of expertly written articles and guides covering a wide range of health
                 topics. From understanding and assisting to common medical conditions to tips for maintaining a healthy
-                lifestyle, our content is designed to assist, educate, inspire and support you in making informed
+                lifestyle, our content is designed to assist, educate, <br> inspire and support you in making informed
                 choices for your health.
-            </p>
-            <p>
                 Discover practical health tips and healthy lifetstyle advice to optimize your physical and mental
                 well-being. We believe that small changes can lead to significant imporvements in your quality of life,
                 and we're here to assist you on your path to a healthy and happier you.
@@ -161,7 +157,7 @@
         </div>
         <div class="why__content">
             <h2 class="seciton__header text-3xl font-bold underline mb-8">Why Choose Us</h2>
-            <p>
+            <p class="opacity-[.5]">
                 With steadfast commitment to your well-being, We are here to provide you the quality remedie on the
                 illnesses our patient may have and keeping patient information and credidentials confidential.
             </p>
@@ -169,7 +165,7 @@
                 <span><i class="ri-hand-heart-line"></i></span>
                 <div>
                     <h4>Virtual care</h4>
-                    <p>
+                    <p class="opacity-[.5]">
                         Get medical care from the comfort of your own home with virtual care. Our SelfCare website bot
                         assistant provides medical advice, prescriptions, and more, all through digital channels such as
                         telemedicine and online services.
@@ -178,7 +174,7 @@
                 <span><i class="ri-macbook-line"></i></span>
                 <div>
                     <h4>Online Medical Consultations</h4>
-                    <p>
+                    <p class="opacity-[.5]">
                         We allows users to consult with a doctor bot online and receive medical advice, prescriptions,
                         and other services through digital channels such as telemedicine and online services.
                     </p>
@@ -186,7 +182,7 @@
                 <span><i class="ri-stethoscope-line"></i></span>
                 <div>
                     <h4>Virtual Medical Consultations</h4>
-                    <p>
+                    <p class="opacity-[.5]">
                         Our virtual medical consultations are designed to provide personalized medical care and support
                         to patients of all ages and backgrounds, and are available at any time, day or night.
                     </p>
@@ -197,33 +193,31 @@
     <!-- contact us -->
 
     <div class="cnt" id="contactus">
-        <h1>Contact Us</h1>
-        <p>We will be glad to respond to your queries or worries and help you succeed.
+        <h1 class="font-bold">Contact Us</h1>
+        <p class="opacity-75 mb-8">We will be glad to respond to your queries or worries and help you succeed.
             <br> Feel free to get in touch with us.
         </p>
         <div class="contact-box">
             <div class="contact-left">
-                <h3>Reach us</h3>
-
-                <table>
-                    <tr>
-                        <td>Email</td>
-                        <td>contactus@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Phone</td>
-                        <td>+237 123 456 789</td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td>Buea, street Molyko<br>
-                            University of Buea, Orange Digital Center</td>
-                    </tr>
-                </table>
-
+                <h3 class="text-4xl">Reach us</h3>
+                <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-xl font-semibold">Email</p>
+                        <p class="opacity-75">contactus@example.com</p>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <p class="text-xl font-semibold">Phone</p>
+                        <p class="opacity-75">+237 123 456 789</p>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <p class="text-xl font-semibold">Address</p>
+                        <p class="opacity-75">Buea, street Molyko<br>
+                            University of Buea, Orange Digital Center</p>
+                    </div>
+                </div>
             </div>
             <div class="contact-right">
-                <h3>Send your request</h3>
+                <h3 class="text-2xl">Send your request</h3>
                 <form>
 
                     <div class="input-row">
@@ -250,7 +244,7 @@
                     </div>
 
                     <label>Message</label>
-                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    <textarea rows="5" placeholder="Your Message" class="mb-5"></textarea>
                     <!-- button -->
                     <button type="submit">SEND</button>
                 </form>
@@ -262,12 +256,12 @@
     <section id="testimonials">
 
         <!-- heading -->
-        <div class="testimonial-heading">
+        <div class="testimonial-heading my-10">
             <span>Comments</span>
             <h1>Clients Says</h1>
         </div>
         <!-- testimonials-box-container -->
-        <div class="testimonial-box-container">
+        <div class="testimonial-box-container mb-10">
 
             <!-- BOX-1 -->
 
@@ -456,7 +450,7 @@
     </section>
     <!-- footer section -->
 
-    <footer class="footer">
+    <footer class="footer px-[9rem] py-10">
         <div class="foot__container footer__container">
             <div class="footer__col">
                 <h3>SelfCare</h3>
@@ -494,19 +488,7 @@
                 <p><i class="ri-mail-fill"></i> support@care.com</p>
                 <p><i class="ri-phone-fill"></i> (+237) 676 29 29 50</p>
             </div>
-            <div class="footer__bar">
-                <div class="footer__bar__content">
-                    <p>
-                        Copyright @ 2023 Bot Web Design. All rights reserved. 
-                    </p>
-                    <div class="footer__socials">
-                        <span><i class="ri-instagram-line"></i></span>
-                        <span><i class="ri-facebook-fill"></i></span>
-                        <span><i class="ri-heart-fill"></i></span>
-                        <span><i class="ri-twitter-fill"></i></span>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </footer>
 </body>
