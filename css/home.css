@@ -12,6 +12,7 @@
     box-sizing: border-box;
     font-family: poppins;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 .btn {
@@ -45,6 +46,9 @@
     transition: 0.3s;
     margin-top: 1.5rem;
 }
+.ctu:active{
+    scale: .8;
+}
 
 .ctu:hover {
     background-color: var(--Yo--color);
@@ -70,7 +74,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-}
+}   
 
 .nav__logo {
     display: flex;
@@ -371,6 +375,7 @@ nav {
 .cnt {
     width: 80%;
     margin: 10rem auto;
+    margin-bottom: 5rem;
 }
 .cnt h1 {
     font-size: 2.5rem;
@@ -391,8 +396,8 @@ nav {
     padding: 40px 60px;
 }
 .cnt h1 {
-    margin-bottom: 10px;
-    font-size: 3.5rem;
+    /* margin-bottom: 10px; */
+    /* font-size: 3.5rem; */
 }
 .input-row {
     display: flex;
@@ -458,7 +463,6 @@ tr td {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    /* margin-bottom: 6rem; */
 }
 .testimonial-heading {
     letter-spacing: 1px;
@@ -475,6 +479,10 @@ tr td {
     background-color: var(--steve-color);
     color: whitesmoke;
     padding: 10px 20px;
+}
+.testimonial-heading h1:hover {
+    background-color: var(--Yo--color);
+    color: whitesmoke;
 }
 .testimonial-heading span {
     font-size: 1.3rem;
@@ -578,9 +586,7 @@ tr td {
     cursor: pointer;
     transition: 0.3s;
 }
-.footer__col p:hover {
-    color: var(--steve-color);
-}
+
 .footer__col i {
     color: var(--Yo--color);
 }
@@ -633,32 +639,4 @@ tr td {
     }
 }
 
-/* reviews */
-
-/* @media(max-width:1060px) {
-    .testimonial-box {
-        width: 45px;
-        padding: 10px;
-    }
-}
-@media(max-width:790px) {
-    .testimonial- {
-        width: 100px;
-    }
-    .testimonial-heading h1 {
-        font-size: 1.4rem;
-    }
-}
-@media(max-width:340px) {
-    .box-top {
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-    }
-    .reviews {
-        margin-top: 10px;
-    }
-}
-::selection {
-    color: white;
-    background-color: #252525;
-} */
+/* Responsiveness reviews */
