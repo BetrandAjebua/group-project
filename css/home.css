@@ -16,16 +16,18 @@
 
 .btn {
     outline: none;
-    padding: .4rem 1rem;
+    padding: .6rem 2.5rem;
     border: none;
-    font-size: 15px;
+    font-size: 18px;
     color: white;
     background-color: var(--steve-color);
     border-radius: 9px;
     cursor: pointer;
     transition: 0.3s;
 }
-
+.btn:active{
+    scale: .8;
+}
 .btn:hover {
     background-color: var(--Yo--color);
     color: white;
@@ -368,7 +370,7 @@ nav {
 /* contact us  */
 .cnt {
     width: 80%;
-    margin: 50px auto;
+    margin: 10rem auto;
 }
 .cnt h1 {
     font-size: 2.5rem;
@@ -388,11 +390,9 @@ nav {
     flex-basis: 60%;
     padding: 40px 60px;
 }
-h1 {
+.cnt h1 {
     margin-bottom: 10px;
-}
-.cnt p {
-    margin-bottom: 40px;
+    font-size: 3.5rem;
 }
 .input-row {
     display: flex;
@@ -402,18 +402,16 @@ h1 {
 .input-row .input-group {
     flex-basis: 45%;
 }
-input {
-    width: 100%;
-}
-input {
+.contact-right input {
     width: 100%;
     border: none;
     border-bottom: 1px solid grey;
     outline: none;
     padding-bottom: 5px;
-    background: none;  
+    outline: none;
+    background: transparent;
 }
-textarea {
+.contact-right textarea {
     width: 100%;
     border: 1px solid grey;
     outline: none;
@@ -427,9 +425,9 @@ label {
     color: var(--Yo--color);
 }
 /* button */
-button {
+.cnt button {
     background-color: var(--steve-color);
-    width: 100px;
+    width: 150px;
     border: none;
     outline: none; 
     color: whitesmoke;
